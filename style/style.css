@@ -1,0 +1,134 @@
+#target {width:100% !important;}
+* { box-sizing: border-box }
+body { margin: 0; padding: 0; }
+#flowedContent, #fixedContent { height:0;width:0;overflow:hidden; }
+
+.cf-fixed {overflow:hidden;}
+
+p {
+	hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+	text-align:left;
+}
+
+@media screen and (max-width: 500px) {
+	p {
+		hyphens: none;
+	    -webkit-hyphens: none;
+	    -ms-hyphens: none;
+	    -moz-hyphens: none;
+		text-align:left;
+	}
+}
+
+.all-small-caps {font-variant: small-caps;text-transform:lowercase;}
+
+.preheadline {text-align:left;color:rgb(146, 34, 97);font-weight:bold;}
+h1, h2 { margin: 0; font-weight:100; }
+figure { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6 { font-family: "Minion Pro", serif; margin: 18px 0 10px; padding: 0; -webkit-font-smoothing: antialiased; cursor: text; position: relative; }
+
+body { font-family: "Minion Pro", serif; font-variant-numeric: oldstyle-nums; font-size: 15px; line-height: 1.2em; }
+p {margin:0;padding:0;font-size:16px;line-height:18px;text-indent:1.2em;}
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p, .no-ident, .ingress + p, .byline + p, .box-letter + p {text-indent:0em;}
+
+.byline {
+	text-indent:0;
+	margin-bottom:8px;
+	font-size:10px;
+	line-height:10px;
+	font-family: -apple-system, BlinkMacSystemFont, Roboto, "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#666;
+}
+
+.date {color:#777;}
+
+.box-letter {float: left; font-size: 66px; margin-top:24px; margin-right: 2px;}
+
+ul {
+	padding:0;
+	padding-left: 17px;
+	margin: 0;
+	margin-bottom:18px;
+	list-style-type: square;
+}
+li { margin: 0; padding: 0; border: 0; }
+a { color: #4183C4; text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:active { outline: none; }
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight:600;
+}
+
+h3, h4, h5, h6 {
+    font-size:1em;
+    margin:0.7em 0 0.4em 0;
+}
+h3 {margin-bottom:0;}
+
+.kicker {
+	text-indent:0em;
+	font-family: "Avenir", sans-serif;
+	font-weight: 500;
+	text-transform:uppercase;
+	font-size:1.0em;
+	letter-spacing:3px;
+}
+
+h1 {
+  font-family: "Minion Pro", serif;
+  font-size:2.5em;
+  line-height:36px;
+  margin-bottom:108px !important;
+  text-align: left;
+  font-weight:bold;
+}
+
+.ingress {
+	font-family: "Minion Pro", serif;
+    font-weight:bold;
+    text-indent:0em;
+	font-size:16px;
+	line-height:18px;
+	margin-bottom:18px;
+    text-align: left;
+	hyphens: none;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    -moz-hyphens: none;
+}
+
+.bio {
+	font-family:"Avenir", sans-serif;
+	margin-top:18px;
+	text-indent:0em;
+	font-size:13px;
+	line-height:18px;
+	font-weight:300;	
+}
+
+.bio strong {font-weight:500;}
+
+figcaption {
+   font-style:italic;
+   font-size:0.866em;
+   line-height:18px;
+   color: #777;
+}
+
+.light {
+   color:#999;
+}
+
+
+
+/* FACT BOX */
+.box {
+	height:180px;
+	font-size:1.6rem;
+	line-height:30px;
+	color:#896658;
+}
