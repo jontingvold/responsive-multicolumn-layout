@@ -128,16 +128,17 @@ $(document).ready(function() {
 	});
 	
 	if (pagination_on) {
+		$("html").css("scroll-snap-type", "y mandatory");
+        $("html").css("-ms-scroll-snap-type", "mandatory");
+        $("html").css("-ms-scroll-snap-points-y", "snapInterval(0, 100%)");
+        $("html").css("scroll-padding-top", extraTopMargin+"px");
+        
+        // Bugfix Safari: Safari uses body as scroll area, not html-element, as it should.
 		$("body").css("scroll-snap-type", "y mandatory");
         $("body").css("-ms-scroll-snap-type", "mandatory");
         $("body").css("-ms-scroll-snap-points-y", "snapInterval(0, 100%)");
-        $(".cf-page").css("scroll-snap-align", "start");
         
-        // Bugfix Chrome
-		var isChromium = window.chrome;
-		if(isChromium) {
-			$("body").css("scroll-padding-top", extraTopMargin+"px");
-		}
+        $(".cf-page").css("scroll-snap-align", "start");
 		
 	}
     
